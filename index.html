@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <h1>Weather App</h1>
+
+        <div class="search-container">
+            <label>
+                <input type="radio" name="searchType" value="city" checked> City
+            </label>
+            <label>
+                <input type="radio" name="searchType" value="country"> Country
+            </label>
+
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <select id="countryDropdown" hidden></select>
+
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="weather-info">
+            <h2 id="location"></h2>
+            <p id="date"></p>
+            <p id="weather"></p>
+            <p id="temp"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
